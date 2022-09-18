@@ -23,7 +23,7 @@ public class ManagerFilms {
         return films;
     }
 
-    public Film[] findLast(int limit) {
+    public Film[] findLast() {
         int totalLenght;
         if (films.length < limit) {
             totalLenght = films.length;

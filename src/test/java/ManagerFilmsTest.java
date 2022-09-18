@@ -29,7 +29,7 @@ public class ManagerFilmsTest {
     }
 
     @Test
-    public void addFilmsFindLast5() {
+    public void addFilmsFindLast() {
         ManagerFilms manager = new ManagerFilms();
         manager.add(film1);
         manager.add(film2);
@@ -39,24 +39,7 @@ public class ManagerFilmsTest {
         manager.add(film6);
         manager.add(film7);
 
-        Film[] actual = manager.findLast(5);
-        Film[] expected = {film7, film6, film5, film4, film3};
-
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    public void addFilmsFindLast10() {
-        ManagerFilms manager = new ManagerFilms();
-        manager.add(film1);
-        manager.add(film2);
-        manager.add(film3);
-        manager.add(film4);
-        manager.add(film5);
-        manager.add(film6);
-        manager.add(film7);
-
-        Film[] actual = manager.findLast(10);
+        Film[] actual = manager.findLast();
         Film[] expected = {film7, film6, film5, film4, film3, film2, film1};
 
         Assertions.assertArrayEquals(expected, actual);
