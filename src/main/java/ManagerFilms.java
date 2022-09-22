@@ -3,7 +3,7 @@ public class ManagerFilms {
     private int limit;
 
     public ManagerFilms() {
-        this.limit = 10;
+        this.limit = 5;
     }
 
     public ManagerFilms(int limit) {
